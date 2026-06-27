@@ -22,7 +22,7 @@ Day la bai toan:
 
 ## 2. Du lieu hien co trong repo
 
-Thu muc [data](C:/Users/Dell/Desktop/MNIST/data) dang chua 4 file goc cua MNIST:
+Thu muc [data] dang chua 4 file goc cua MNIST:
 
 - `train-images.idx3-ubyte`
 - `train-labels.idx1-ubyte`
@@ -287,14 +287,14 @@ MNIST/
 
 Repo hien da co bo khung PyTorch toi thieu:
 
-- [src/data_loader.py](C:/Users/Dell/Desktop/MNIST/src/data_loader.py:1): doc file `.idx`
-- [src/preprocess.py](C:/Users/Dell/Desktop/MNIST/src/preprocess.py:1): chuan hoa va tach validation
-- [src/dataset.py](C:/Users/Dell/Desktop/MNIST/src/dataset.py:1): `Dataset` va `DataLoader`
-- [src/models/mlp.py](C:/Users/Dell/Desktop/MNIST/src/models/mlp.py:1): baseline `MLP`
-- [src/models/cnn.py](C:/Users/Dell/Desktop/MNIST/src/models/cnn.py:1): model `CNN`
-- [src/train.py](C:/Users/Dell/Desktop/MNIST/src/train.py:1): train loop chinh
-- [src/evaluate.py](C:/Users/Dell/Desktop/MNIST/src/evaluate.py:1): evaluate va confusion matrix
-- [src/visualize.py](C:/Users/Dell/Desktop/MNIST/src/visualize.py:1): luu history va ve bieu do loss/accuracy
+- [src/data_loader.py]: doc file `.idx`
+- [src/preprocess.py]: chuan hoa va tach validation
+- [src/dataset.py]: `Dataset` va `DataLoader`
+- [src/models/mlp.py]: baseline `MLP`
+- [src/models/cnn.py]: model `CNN`
+- [src/train.py]: train loop chinh
+- [src/evaluate.py]: evaluate va confusion matrix
+- [src/visualize.py]: luu history va ve bieu do loss/accuracy
 
 ## 9. Cach chay
 
@@ -360,11 +360,6 @@ Xay dung mot pipeline MNIST bang PyTorch de di tu du lieu `.idx` goc den mot bas
 [ ] Trien khai them mot `CNN` co ban va so sanh voi `MLP` de thay loi ich cua dac trung khong gian.
 [ ] Tong hop ket qua thanh nhan xet hoc thuat toan: model hoc duoc gi, sai o dau, va vi sao.
 
-## Open questions
-- Ban muon minh uu tien code baseline `MLP` truoc hay di thang sang `CNN`?
-- Ban co muon them notebook de vua hoc vua chay thu khong?
-- Ban co muon minh scaffold luon ma nguon PyTorch theo plan nay khong?
-
 ## 11. Dieu can nho nhat
 
 Neu chi giu lai mot y, thi do la:
@@ -375,4 +370,3 @@ Flow cot loi la:
 
 `doc du lieu -> tensor hoa -> chuan hoa -> model -> loss -> backward -> update -> evaluate`
 
-Nam chac flow nay, ban se hieu duoc nen tang cua rat nhieu bai toan deep learning khac, khong chi rieng MNIST.
